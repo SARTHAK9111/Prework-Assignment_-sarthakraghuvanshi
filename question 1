@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class Main {
+
+static String firstLetterPrinter(String str) {
+ // write your code here
+    int n= str.length();
+    String[] split_arr= str.split(" ");
+    String st="";
+    for(String  a: split_arr){
+      st=st+a.charAt(0);
+    }
+    return st;
+ }
+ 
+public static void main (String[] args) {
+ Scanner in = new Scanner(System.in);
+ String input = in.nextLine();
+System.out.println(firstLetterPrinter(input));
+}
+}
